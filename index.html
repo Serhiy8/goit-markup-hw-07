@@ -10,54 +10,104 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <title>Document</title>
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!--Header-->
 
-    <header>
-      <div class="container container-nav">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo-header link"
-            >Web<span class="color-logo">Studio</span></a
-          >
-
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link link under-line">Studio</a>
+    <header class="page-header">
+      <div class="header-container container">
+        <a href="./index.html" class="logo-header link"
+          >Web<span>studio</span></a
+        >
+        <button
+          class="menu-button js-menu-container js-open-menu js-close-menu"
+          type="button"
+          aria-expanded="false"
+        >
+          <svg class="header-icon" aria-label="mobile-menu-switcher">
+            <use
+              href="./images/icons.svg#charm_menu-hamburger"
+              class="header-icon-hamburger"
+            ></use>
+            <use
+              href="./images/icons.svg#icon-vector"
+              class="header-icon-cross"
+            ></use>
+          </svg>
+        </button>
+        <div class="thumb-nav-menu">
+          <nav class="header-nav">
+            <ul class="header-list list">
+              <li class="header-list-item">
+                <a href="./index.html" class="header-list-link link under-line"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-list-item">
+                <a href="./portfolio.html" class="header-list-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-list-item">
+                <a href="" class="header-list-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header-address">
+            <ul class="address-list list">
+              <li class="address-link">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address-link-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-link">
+                <a href="tel:+110001111111" class="address-link-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="list menu-social-list">
+            <li>
+              <a href="" class="menu-social-link">
+                <svg class="button-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+            <li>
+              <a href="" class="menu-social-link"
+                ><svg class="button-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link link">Contacts</a>
+            <li>
+              <a href="" class="menu-social-link link"
+                ><svg class="button-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="" class="menu-social-link link"
+                ><svg class="button-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </nav>
-        <address class="address-header">
-          <ul class="auth-nav list">
-            <li class="auth-item">
-              <a href="mailto:info@devstudio.com" class="address-list link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="auth-item">
-              <a href="tel:+110001111111" class="address-list link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
       </div>
     </header>
 
-    <!-- Hero image -->
+    <!--Hero page-->
+
     <main>
       <section class="page-hero section">
-        <div class="containet">
+        <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
             Order Service
@@ -65,9 +115,9 @@
         </div>
       </section>
 
-      <!-- Benefits at work -->
+      <!--Benefits of work-->
 
-      <section class="section">
+      <section class="benefits-section section">
         <div class="container">
           <h2 class="hidden-title" hidden>Benefits at work</h2>
           <ul class="benefits-list list">
@@ -131,6 +181,7 @@
           <ul class="list">
             <li class="doing-item">
               <img
+                srcset="./images/doing-1.jpg 1x, ./images/doing-1-@2x.jpg 2x"
                 src="./images/doing-1.jpg"
                 alt="doing-1"
                 width="360"
@@ -139,6 +190,7 @@
             </li>
             <li class="doing-item">
               <img
+                srcset="./images/doing-2.jpg 1x, ./images/doing-2-@2x.jpg 2x"
                 src="./images/doing-2.jpg"
                 alt="doing-2"
                 width="360"
@@ -147,6 +199,7 @@
             </li>
             <li class="doing-item">
               <img
+                srcset="./images/doing-3.jpg 1x, ./images/doing-3-@2x.jpg 2x"
                 src="./images/doing-3.jpg"
                 alt="doing-3"
                 width="360"
@@ -165,6 +218,7 @@
           <ul class="page-team-list list">
             <li class="team-item">
               <img
+                srcset="./images/team-1.jpg 1x, ./images/team-1-@2x.jpg 2x"
                 src="./images/team-1.jpg"
                 alt="team-1"
                 width="264"
@@ -205,6 +259,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-2.jpg 1x, ./images/team-2-@2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="team-2"
                 width="264"
@@ -245,6 +300,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-3.jpg 1x, ./images/team-3-@2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="team-3"
                 width="264"
@@ -285,6 +341,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-4.jpg 1x, ./images/team-4-@2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="team-4"
                 width="264"
@@ -418,16 +475,18 @@
         </div>
 
         <form class="footer-form">
-          <label for="email" class="form-lable">Subscribe</label>
           <div class="footer-form-thumb">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              class="form-input"
-              required
-            />
+            <label for="email" class="form-lable"
+              ><span>Subscribe</span
+              ><input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                class="form-input"
+                required
+            /></label>
+
             <button type="submit" class="form-button">
               Subscribe
               <svg class="form-icon">
@@ -439,7 +498,7 @@
       </div>
     </footer>
 
-    <!-- Modal window -->
+    <!--Modal window-->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -453,6 +512,7 @@
           <h2 class="modal-form-title">
             Leave your contacts and we will call you back
           </h2>
+
           <ul class="modal-form-list list">
             <li class="modal-form-item">
               <label class="modal-form-lable">
@@ -514,6 +574,7 @@
               </label>
             </li>
           </ul>
+
           <label class="modal-check-lable">
             <input
               type="checkbox"
@@ -532,7 +593,7 @@
         </form>
       </div>
     </div>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

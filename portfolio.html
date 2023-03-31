@@ -18,40 +18,88 @@
     <!-- Header -->
 
     <header class="header-line">
-      <div class="container container-nav">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo-header link"
-            >Web<span class="color-logo">Studio</span></a
-          >
-
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link link">Studio</a>
+      <div class="header-container container">
+        <a href="./index.html" class="logo-header link"
+          >Web<span>studio</span></a
+        >
+        <button
+          class="menu-button js-menu-container js-open-menu js-close-menu"
+          type="button"
+          aria-expanded="false"
+        >
+          <svg class="header-icon" aria-label="mobile-menu-switcher">
+            <use
+              href="./images/icons.svg#charm_menu-hamburger"
+              class="header-icon-hamburger"
+            ></use>
+            <use
+              href="./images/icons.svg#icon-vector"
+              class="header-icon-cross"
+            ></use>
+          </svg>
+        </button>
+        <div class="thumb-nav-menu">
+          <nav class="header-nav">
+            <ul class="header-list list">
+              <li class="header-list-item">
+                <a href="./index.html" class="header-list-link link">Studio</a>
+              </li>
+              <li class="header-list-item">
+                <a
+                  href="./portfolio.html"
+                  class="header-list-link link under-line"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-list-item">
+                <a href="" class="header-list-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header-address">
+            <ul class="address-list list">
+              <li class="address-link">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address-link-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-link">
+                <a href="tel:+110001111111" class="address-link-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="list menu-social-list">
+            <li>
+              <a href="" class="menu-social-link">
+                <svg class="button-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link link under-line"
-                >Portfolio</a
-              >
+            <li>
+              <a href="" class="menu-social-link"
+                ><svg class="button-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link link">Contacts</a>
+            <li>
+              <a href="" class="menu-social-link link"
+                ><svg class="button-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="" class="menu-social-link link"
+                ><svg class="button-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </nav>
-        <address class="address-header">
-          <ul class="auth-nav list">
-            <li class="auth-item">
-              <a href="mailto:info@devstudio.com" class="address-list link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="auth-item">
-              <a href="tel:+110001111111" class="address-list link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
       </div>
     </header>
 
@@ -87,6 +135,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-1.jpg     1x,
+                      ./images/project-1-@2x.jpg 2x
+                    "
                     src="./images/project-1.jpg"
                     alt="App banking slides"
                     width="360"
@@ -110,6 +162,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-2.jpg     1x,
+                      ./images/project-2-@2x.jpg 2x
+                    "
                     src="./images/project-2.jpg"
                     alt="App banking slides"
                     width="360"
@@ -132,6 +188,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-3.jpg     1x,
+                      ./images/project-3-@2x.jpg 2x
+                    "
                     src="./images/project-3.jpg"
                     alt="App banking slides"
                     width="360"
@@ -154,6 +214,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-4.jpg     1x,
+                      ./images/project-4-@2x.jpg 2x
+                    "
                     src="./images/project-4.jpg"
                     alt="App banking slides"
                     width="360"
@@ -176,6 +240,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-5.jpg     1x,
+                      ./images/project-5-@2x.jpg 2x
+                    "
                     src="./images/project-5.jpg"
                     alt="App banking slides"
                     width="360"
@@ -198,6 +266,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-6.jpg     1x,
+                      ./images/project-6-@2x.jpg 2x
+                    "
                     src="./images/project-6.jpg"
                     alt="App banking slides"
                     width="360"
@@ -220,6 +292,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-7.jpg     1x,
+                      ./images/project-7-@2x.jpg 2x
+                    "
                     src="./images/project-7.jpg"
                     alt="App banking slides"
                     width="360"
@@ -242,6 +318,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-8.jpg     1x,
+                      ./images/project-8-@2x.jpg 2x
+                    "
                     src="./images/project-8.jpg"
                     alt="App banking slides"
                     width="360"
@@ -264,6 +344,10 @@
               <a href="" class="link"
                 ><div class="project-overlay">
                   <img
+                    srcset="
+                      ./images/project-9.jpg     1x,
+                      ./images/project-9-@2x.jpg 2x
+                    "
                     src="./images/project-9.jpg"
                     alt="App banking slides"
                     width="360"
@@ -329,16 +413,18 @@
         </div>
 
         <form class="footer-form">
-          <label for="email" class="form-lable">Subscribe</label>
           <div class="footer-form-thumb">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              class="form-input"
-              required
-            />
+            <label for="email" class="form-lable"
+              ><span>Subscribe</span
+              ><input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                class="form-input"
+                required
+            /></label>
+
             <button type="submit" class="form-button">
               Subscribe
               <svg class="form-icon">
@@ -349,5 +435,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
