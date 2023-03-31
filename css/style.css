@@ -96,7 +96,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 70px;
 }
 
 .logo-header {
@@ -107,6 +106,8 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+
+  padding: 24px 0;
 }
 
 .logo-header span {
@@ -261,6 +262,10 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .logo-header {
+    padding: 0;
+  }
+
   .menu-button {
     display: none;
   }
@@ -282,11 +287,12 @@ ul {
   }
 
   .header-list-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .header-list-link::after {
