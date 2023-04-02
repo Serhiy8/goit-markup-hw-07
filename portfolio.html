@@ -17,13 +17,13 @@
   <body>
     <!-- Header -->
 
-    <header class="header-line">
+    <header class="page-header header-line">
       <div class="header-container container">
         <a href="./index.html" class="logo-header link"
           >Web<span>studio</span></a
         >
         <button
-          class="menu-button js-menu-container js-open-menu js-close-menu"
+          class="menu-button js-open-menu"
           type="button"
           aria-expanded="false"
         >
@@ -32,13 +32,17 @@
               href="./images/icons.svg#charm_menu-hamburger"
               class="header-icon-hamburger"
             ></use>
-            <use
-              href="./images/icons.svg#icon-vector"
-              class="header-icon-cross"
-            ></use>
           </svg>
         </button>
-        <div class="thumb-nav-menu">
+        <div class="thumb-nav-menu js-menu-container">
+          <button class="menu-button js-close-menu" type="button">
+            <svg class="header-icon" aria-label="mobile-menu-switcher">
+              <use
+                href="./images/icons.svg#icon-vector"
+                class="header-icon-cross"
+              ></use>
+            </svg>
+          </button>
           <nav class="header-nav">
             <ul class="header-list list">
               <li class="header-list-item">
@@ -134,17 +138,28 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-1.jpg     1x,
-                      ./images/project-1-@2x.jpg 2x
-                    "
-                    src="./images/project-1.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-1.jpg     1x,
+                        ./images/mobile-project-1-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)" />
+                    <source
+                      srcset="
+                        ./images/tablet-project-1.jpg     1x,
+                        ./images/tablet-project-1-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)" />
+                    <img
+                      srcset="
+                        ./images/project-1.jpg     1x,
+                        ./images/project-1-@2x.jpg 2x
+                      "
+                      src="./images/project-1.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                  /></picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -161,17 +176,31 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-2.jpg     1x,
-                      ./images/project-2-@2x.jpg 2x
-                    "
-                    src="./images/project-2.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-2.jpg     1x,
+                        ./images/mobile-project-2-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-project-2.jpg     1x,
+                        ./images/tablet-project-2-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project-2.jpg     1x,
+                        ./images/project-2-@2x.jpg 2x
+                      "
+                      src="./images/project-2.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                    />
+                  </picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -187,17 +216,31 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-3.jpg     1x,
-                      ./images/project-3-@2x.jpg 2x
-                    "
-                    src="./images/project-3.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-3.jpg     1x,
+                        ./images/mobile-project-3-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-project-3.jpg     1x,
+                        ./images/tablet-project-3-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project-3.jpg     1x,
+                        ./images/project-3-@2x.jpg 2x
+                      "
+                      src="./images/project-3.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                    />
+                  </picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -213,17 +256,31 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-4.jpg     1x,
-                      ./images/project-4-@2x.jpg 2x
-                    "
-                    src="./images/project-4.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-4.jpg     1x,
+                        ./images/mobile-project-4-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-project-4.jpg     1x,
+                        ./images/tablet-project-4-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project-4.jpg     1x,
+                        ./images/project-4-@2x.jpg 2x
+                      "
+                      src="./images/project-4.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                    />
+                  </picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -239,17 +296,31 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-5.jpg     1x,
-                      ./images/project-5-@2x.jpg 2x
-                    "
-                    src="./images/project-5.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-5.jpg     1x,
+                        ./images/mobile-project-5-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-project-5.jpg     1x,
+                        ./images/tablet-project-5-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project-5.jpg     1x,
+                        ./images/project-5-@2x.jpg 2x
+                      "
+                      src="./images/project-5.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                    />
+                  </picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -265,17 +336,31 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-6.jpg     1x,
-                      ./images/project-6-@2x.jpg 2x
-                    "
-                    src="./images/project-6.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-6.jpg     1x,
+                        ./images/mobile-project-6-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-project-6.jpg     1x,
+                        ./images/tablet-project-6-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project-6.jpg     1x,
+                        ./images/project-6-@2x.jpg 2x
+                      "
+                      src="./images/project-6.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                    />
+                  </picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -291,17 +376,31 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-7.jpg     1x,
-                      ./images/project-7-@2x.jpg 2x
-                    "
-                    src="./images/project-7.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-7.jpg     1x,
+                        ./images/mobile-project-7-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-project-7.jpg     1x,
+                        ./images/tablet-project-7-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project-7.jpg     1x,
+                        ./images/project-7-@2x.jpg 2x
+                      "
+                      src="./images/project-7.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                    />
+                  </picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -317,17 +416,31 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-8.jpg     1x,
-                      ./images/project-8-@2x.jpg 2x
-                    "
-                    src="./images/project-8.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-8.jpg     1x,
+                        ./images/mobile-project-8-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-project-8.jpg     1x,
+                        ./images/tablet-project-8-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project-8.jpg     1x,
+                        ./images/project-8-@2x.jpg 2x
+                      "
+                      src="./images/project-8.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                    />
+                  </picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -343,17 +456,31 @@
             <li class="project-item">
               <a href="" class="link"
                 ><div class="project-overlay">
-                  <img
-                    srcset="
-                      ./images/project-9.jpg     1x,
-                      ./images/project-9-@2x.jpg 2x
-                    "
-                    src="./images/project-9.jpg"
-                    alt="App banking slides"
-                    width="360"
-                    height="300"
-                    class="project-img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-project-9.jpg     1x,
+                        ./images/mobile-project-9-@2x.jpg 2x
+                      "
+                      media="(max-width: 767.97px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-project-9.jpg     1x,
+                        ./images/tablet-project-9-@2x.jpg 2x
+                      "
+                      media="(max-width: 1199.97px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/project-9.jpg     1x,
+                        ./images/project-9-@2x.jpg 2x
+                      "
+                      src="./images/project-9.jpg"
+                      alt="App banking slides"
+                      class="project-img"
+                    />
+                  </picture>
                   <p class="project-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce

@@ -23,7 +23,7 @@
           >Web<span>studio</span></a
         >
         <button
-          class="menu-button js-menu-container js-open-menu js-close-menu"
+          class="menu-button js-open-menu"
           type="button"
           aria-expanded="false"
         >
@@ -32,13 +32,17 @@
               href="./images/icons.svg#charm_menu-hamburger"
               class="header-icon-hamburger"
             ></use>
-            <use
-              href="./images/icons.svg#icon-vector"
-              class="header-icon-cross"
-            ></use>
           </svg>
         </button>
-        <div class="thumb-nav-menu">
+        <div class="thumb-nav-menu js-menu-container">
+          <button class="menu-button js-close-menu" type="button">
+            <svg class="header-icon" aria-label="mobile-menu-switcher">
+              <use
+                href="./images/icons.svg#icon-vector"
+                class="header-icon-cross"
+              ></use>
+            </svg>
+          </button>
           <nav class="header-nav">
             <ul class="header-list list">
               <li class="header-list-item">
@@ -103,9 +107,9 @@
       </div>
     </header>
 
-    <!--Hero page-->
-
     <main>
+      <!--Hero page-->
+
       <section class="page-hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
